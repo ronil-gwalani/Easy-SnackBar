@@ -19,6 +19,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import lib.ronil.customsnackbar.rememberSnackBarState
 import org.ronil.easysnackbar.ui.theme.EasySnackBarTheme
 
 class MainActivity : ComponentActivity() {
@@ -27,7 +28,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             EasySnackBarTheme {
-//                ExampleUsage()
+                ExampleUsage()
 
             }
         }
@@ -35,31 +36,32 @@ class MainActivity : ComponentActivity() {
 }
 
 
-//@Composable
-//fun ExampleUsage() {
-//    val dialogState = rememberSnackBarState().apply {
-//        duration = 5000
-//        contentAlignment = Alignment.BottomCenter
-//        textAlignment= TextAlign.Center
-//        positiveSnackBarColor = Color.Cyan
-//        positiveSnackBarTextColor = Color.Red
-//        negativeSnackBarColor = Color.Black
-//        negativeSnackBarTextColor = Color.Yellow
-//        shape = CircleShape
-//        horizontalPadding = 10.dp
-//        verticalPadding = 10.dp
-//    }
-//
-//
-//    Column(
-//        modifier = Modifier.fillMaxSize(),
-//        horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.Center
-//    ) {
-//        Button(onClick = { dialogState.showPositiveSnackBar("This is the Positive Snack-bar") }) {
-//            Text("Show Positive SnackBar")
-//        }
-//        Button(onClick = { dialogState.showNegativeSnackBar("This is the Negative Snack-bar") }) {
-//            Text("Show Negative SnackBar")
-//        }
-//    }
-//}
+@Composable
+fun ExampleUsage() {
+    val dialogState = rememberSnackBarState()
+        .apply {
+        duration = 5000
+        contentAlignment = Alignment.BottomCenter
+        textAlignment= TextAlign.Center
+        positiveSnackBarColor = Color.Cyan
+        positiveSnackBarTextColor = Color.Red
+        negativeSnackBarColor = Color.Black
+        negativeSnackBarTextColor = Color.Yellow
+        shape = CircleShape
+        horizontalPadding = 10.dp
+        verticalPadding = 10.dp
+    }
+
+
+    Column(
+        modifier = Modifier.fillMaxSize(),
+        horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.Center
+    ) {
+        Button(onClick = { dialogState.showPositiveSnackBar("This is the Positive Snack-bar") }) {
+            Text("Show Positive SnackBar")
+        }
+        Button(onClick = { dialogState.showNegativeSnackBar("This is the Negative Snack-bar") }) {
+            Text("Show Negative SnackBar")
+        }
+    }
+}
