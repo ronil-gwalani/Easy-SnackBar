@@ -81,6 +81,16 @@ val dialogState = rememberSnackBarState().apply {
 
 With these steps, you should be able to successfully integrate and use the Custom Snack Bar in your project. If you encounter any issues or have further questions, feel free to reach out.
 
+## ScreenShots
+
+![Screenshot of Positive Snackbar in default mode](https://github.com/ronil-gwalani/Easy-SnackBar/blob/main/CustomSnackBar/screenshots/image1.png)
+![Screenshot of Negative Snackbar in default mode](https://github.com/ronil-gwalani/Easy-SnackBar/blob/main/CustomSnackBar/screenshots/image2.png)
+![Screenshot of Positive Snackbar in Customised mode](https://github.com/ronil-gwalani/Easy-SnackBar/blob/main/CustomSnackBar/screenshots/image3.png)
+![Screenshot of Positive Snackbar in Customised mode](https://github.com/ronil-gwalani/Easy-SnackBar/blob/main/CustomSnackBar/screenshots/image4.png)
+
+
+
+
 ## Contributing
 
 Contributions to the project are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
@@ -104,6 +114,8 @@ The Easy Snack Bar Library was developed by [Ronil Gwalani](https://github.com/r
 ### Portfolio Website-[Ronil Gwalani](ronildeveloper.in)
 
 ### Linkeden-[Lets Connect](https://www.linkedin.com/in/ronil-gwalani/)
+
+# **Happy Coding**
 
 
 
